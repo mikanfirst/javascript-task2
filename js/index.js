@@ -46,6 +46,22 @@ function showScore() {
 
 }
 
-// const correct = "正解です"
-// const incorrect = "不正解です"
+$(function(){
+  $('.box1').mouseover(function(){
+    $('.box1').css({'background-color': '#0000FF'});
+  });
+  $('.box1').mouseout(function(){
+    $('.box1').css({'background-color': '#FF0000'});
+  });
+  $('.box1').on('click', function(){
+    $('.box1').slideUp();
+  });
+});
 
+
+
+$('.slider').slick({
+  autoplay:true,
+  arrows:true,
+  dots:true
+});
